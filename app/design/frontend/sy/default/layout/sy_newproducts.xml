@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<layout>
+
+    <sy_newproducts_index_list>
+        <reference name="content">
+            <block type="sy_newproducts/list" name="sy.list" template="sy_newproducts/index.phtml" />
+        </reference>
+    </sy_newproducts_index_list>
+
+    <index_index_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="sy_newproducts/slider" name="sy.slideronmain" template="sy_newproducts/slider.phtml" />
+        </reference>
+        <reference name="content">
+            <block type="sy_newproducts/list" name="sy.listonmain" template="sy_newproducts/index.phtml" />
+        </reference>
+    </index_index_index>
+
+</layout>

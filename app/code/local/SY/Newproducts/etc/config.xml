@@ -1,0 +1,33 @@
+<config>
+    <modules>
+        <SY_Newproducts>
+            <version>0.1.0</version>
+        </SY_Newproducts>
+    </modules>
+    <frontend>
+        <routers>
+            <index>
+                <use>standard</use>
+                <args>
+                    <module>SY_Newproducts</module>
+                    <frontName>index</frontName>
+                </args>
+            </index>
+        </routers>
+        <layout>
+            <updates>
+                <sy_newproducts>
+                    <file>sy_newproducts.xml</file>
+                </sy_newproducts>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <sy_newproducts>
+                <class>SY_Newproducts_Block</class>
+            </sy_newproducts>
+        </blocks>
+    </global>
+
+</config>
