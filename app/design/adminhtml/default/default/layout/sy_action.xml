@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<layout>
+
+    <adminhtml_actions_index>
+        <reference name="content">
+            <block type="sy_action/adminhtml_actions" name="actions.grid"/>
+        </reference>
+    </adminhtml_actions_index>
+
+    <adminhtml_actions_edit>
+        <reference name="content">
+            <block type="sy_action/adminhtml_actions_edit" name="actions_edit"></block>
+        </reference>
+        <reference name="left">
+            <block type="sy_action/adminhtml_actions_edit_tabs" name="actions_edit_tabs">
+                <block type="sy_action/adminhtml_actions_edit_tab_main" name="sy_action_edit_tab_main" />
+                <action method="addTab"><name>main_section</name><block>sy_action_edit_tab_main</block></action>
+            </block>
+        </reference>
+    </adminhtml_actions_edit>
+
+    <adminhtml_actions_productstab>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="sy_action/adminhtml_actions_edit_tab_products" name="sy_action_edit_tab_products" />
+            <block type="adminhtml/widget_grid_serializer" name="products_grid_serializer">
+                <reference name="products_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>sy_action_edit_tab_products</grid_block_name>
+                        <data_callback>getSelectedProducts</data_callback>
+                        <hidden_input_name>products_ids</hidden_input_name>
+                        <reload_param_name>products_ids</reload_param_name>
+                    </action>
+                </reference>
+            </block>
+        </block>
+    </adminhtml_actions_productstab>
+
+    <adminhtml_actions_productsgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="sy_action/adminhtml_actions_edit_tab_products" name="sy_action_edit_tab_products" />
+        </block>
+    </adminhtml_actions_productsgrid>
+
+</layout>

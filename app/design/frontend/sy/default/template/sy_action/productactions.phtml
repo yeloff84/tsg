@@ -1,0 +1,22 @@
+<?php if ($_actions = $this->getActionsByProduct()) : ?>
+    <h3>Product Present in Action</h3>
+    <?php foreach ($_actions as $_pa) : ?>
+
+    <div class="item f-left">
+        <div class="action-image">
+            <img src="<?php echo Mage::helper('sy_action')->resizeImage($_pa->image, 200, 200); ?>" alt="<?php echo $_pa->name; ?>" />
+        </div>
+        <b><?php echo $_pa->name; ?></b>
+        <div>
+            <b>Action Duration: </b> from <?php echo gmdate('d.m.Y', strtotime($_pa->start_datetime)); ?>
+            <?php if ($_pa->end_datetime) : ?>
+                <?php echo ' to '.gmdate('d.m.Y', strtotime($_pa->end_datetime)); ?>
+            <?php endif; ?>
+        </div>
+        <div class="action-details">
+            <a href="<?php echo Mage::getBaseUrl().'actions/action/index/id/'.$_pa->id; ?>" title="<?php echo $_pa->name; ?>">Action details...</a>
+        </div>
+    </div>
+
+    <?php endforeach; ?>
+<?php endif; ?>

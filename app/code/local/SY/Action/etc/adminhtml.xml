@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sy_action translate="title">
+            <title>SY Actions List</title>
+            <sort_order>300</sort_order>
+            <action>adminhtml/actions</action>
+        </sy_action>
+    </menu>
+</config>

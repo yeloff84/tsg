@@ -1,0 +1,44 @@
+<?php
+
+?>
+
+<h2>SY Action details page</h2>
+
+<div class="widget">
+    <div class="action-details">
+        <div style="float: left; margin: 0 20px 20px 0;"><img src="<?php echo Mage::helper('sy_action')->resizeImage($this->getActionDetails()->image, 300, 300); ?>" alt="<?php echo $this->getActionDetails()->name; ?>" /></div>
+        <h1>Action Name: <?php echo $this->getActionDetails()->name; ?></h1>
+        <div><?php echo $this->getActionDetails()->description; ?></div>
+        <br>
+        <hr>
+        <br>
+        <b>Action Duration: </b>
+        from <?php echo gmdate('d.m.Y', strtotime($this->getActionDetails()->start_datetime)); ?>
+        <?php if ($this->getActionDetails()->end_datetime) : ?>
+            <?php echo ' to '.gmdate('d.m.Y', strtotime($this->getActionDetails()->end_datetime)); ?>
+        <?php endif; ?>
+    </div>
+    <div style="clear:both;"></div>
+    <br>
+    <hr>
+    <br>
+    <div class="widget-products">
+        <h3>Action Products</h3>
+        <?php if ($_aps = $this->getActionProducts($this->getActionDetails()->id)) : ?>
+        <ul class="products-grid products-grid--max-6-col first last odd">
+        <?php foreach ($_aps as $_ap) : ?>
+                <li class="item action-item">
+                    <a href="<?php echo $_ap->getProductUrl() ?>" title="<?php echo $this->stripTags($_ap->getName(), null, true) ?>" class="product-image">
+                        <img src="<?php echo $this->helper('catalog/image')->init($_ap, 'small_image')->resize(200) ?>" alt="<?php echo $this->stripTags($_ap->getName(), null, true) ?>" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="<?php echo $_ap->getProductUrl() ?>" title="<?php echo $this->stripTags($_ap->getName(), null, true) ?>"><?php echo $this->helper('catalog/output')->productAttribute($_ap, $_ap->getName() , 'name') ?></a></h3>
+                        <div class="product-sku"><?php echo $_ap->sku; ?></div>
+                        <div class="product-price"><?php echo $this->getPriceHtml($_ap, true, '-widget-new-grid'); ?></div>
+                    </div>
+                </li>
+        <?php endforeach; ?>
+        </ul>
+        <?php endif; ?>
+    </div>
+</div>
