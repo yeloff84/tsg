@@ -13,6 +13,7 @@ class Sy_Action_Block_Pactions extends Mage_Core_Block_Template
         /** @var Mage_Core_Model_Date $datemodel */
         $datemodel = Mage::getModel('core/date');
         $curdate = $datemodel->gmtDate('Y-m-d H:i:s');
+        $dateHelper = Mage::helper('core');
 
         $model = Mage::getModel('action/action');
 
@@ -24,6 +25,19 @@ class Sy_Action_Block_Pactions extends Mage_Core_Block_Template
                 array('gteq' => $curdate),
                 array('null' => true)
             ));
+
+        foreach ($actions as $pac) {
+
+            $pac->setResizedImage(Mage::helper('sy_action')->resizeImage($pac->getImage(), 200, 200));
+
+            if (!$pac->getEndDatetime()) {
+                $pac->setDuration('never ending');
+            } else {
+                $pac->setDuration(
+                    'untill ' . $dateHelper->formatDate($pac->getEndDatetime(), 'short', false)
+                );
+            }
+        }
 
         return $actions;
     }

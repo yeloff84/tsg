@@ -58,7 +58,7 @@ class Sy_Action_Adminhtml_ActionsController extends Mage_Adminhtml_Controller_Ac
     /**
      * @throws Mage_Core_Exception
      */
-    public function productsGridAction()
+    public function productsgridAction()
     {
         $actionId = (int) $this->getRequest()->getParam('id');
 
@@ -100,10 +100,10 @@ class Sy_Action_Adminhtml_ActionsController extends Mage_Adminhtml_Controller_Ac
         $timemodel = Mage::getModel('core/date');
 
         $data['create_datetime'] = $timemodel->gmtDate('Y-m-d H:i:s');
-        $data['start_datetime'] = $timemodel->gmtDate('Y-m-d H:i:s', strtotime($data['start_datetime']));
+        $data['start_datetime'] = $timemodel->gmtDate('Y-m-d H:i:s', $data['start_datetime']);
 
         if (array_key_exists('end_datetime', $data)) {
-            $data['end_datetime'] = $timemodel->gmtDate('Y-m-d H:i:s', strtotime($data['end_datetime']));
+            $data['end_datetime'] = $timemodel->gmtDate('Y-m-d H:i:s', $data['end_datetime']);
         }
 
         if (isset($_FILES['image']['name']) and (file_exists($_FILES['image']['tmp_name']))) {

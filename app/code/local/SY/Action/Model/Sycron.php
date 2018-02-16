@@ -21,26 +21,27 @@ class Sy_Action_Model_Sycron
 
         $data = array();
 
+        /** @var SY_Action_Model_Action $action */
         foreach ($actions as $action) {
-            if (strtotime($action->start_datetime) > strtotime($curdate)) {
-                $model->load($action->id)->addData(array('status' => 1));
+            if (strtotime($action->getStartDatetime()) > strtotime($curdate)) {
+                $model->load($action->getId())->addData(array('status' => 1));
                 try {
-                    $model->setId($action->id)->save();
+                    $model->setId($action->getId())->save();
                 } catch (Exception $e){
                     Mage::logException($e);
                 }
-            } elseif ((strtotime($action->start_datetime) < strtotime($curdate)
-                && (strtotime($action->end_datetime) > strtotime($curdate) || strtotime($action->end_datetime) == null ))) {
-                $model->load($action->id)->addData(array('status' => 2));
+            } elseif ((strtotime($action->getStartDatetime()) < strtotime($curdate)
+                && (strtotime($action->getEndDatetime()) > strtotime($curdate) || strtotime($action->getEndDatetime()) == null ))) {
+                $model->load($action->getId())->addData(array('status' => 2));
                 try {
-                    $model->setId($action->id)->save();
+                    $model->setId($action->getId())->save();
                 } catch (Exception $e){
                     Mage::logException($e);
                 }
             } else {
-                $model->load($action->id)->addData(array('status' => 3));
+                $model->load($action->getId())->addData(array('status' => 3));
                 try {
-                    $model->setId($action->id)->save();
+                    $model->setId($action->getId())->save();
                 } catch (Exception $e){
                     Mage::logException($e);
                 }

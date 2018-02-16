@@ -44,22 +44,26 @@ class Sy_Action_Block_Adminhtml_Actions_Edit_Tab_Main extends Mage_Adminhtml_Blo
             'title'     => Mage::helper('sy_action')->__('Action Image'),
         ));
 
-        $fieldset->addField('start_datetime', 'datetime', array(
+        $dateFormat = Mage::app()->getLocale()->getDateTimeFormat(Mage_Core_Model_Locale::FORMAT_TYPE_SHORT);
+
+        $fieldset->addField('start_datetime', 'date', array(
             'name'      => 'start_datetime',
             'label'     => Mage::helper('sy_action')->__('Start datetime'),
             'title'     => Mage::helper('sy_action')->__('Start datetime'),
-            'time' => true,
-            'format' => 'dd.MM.y',
+            'input_format' => $dateFormat,
+            'format'    => $dateFormat,
+            'time'      => true,
             'image'     => $this->getSkinUrl('images/grid-cal.gif'),
             'required'  => true,
         ));
 
-        $fieldset->addField('end_datetime', 'datetime', array(
+        $fieldset->addField('end_datetime', 'date', array(
             'name'      => 'end_datetime',
             'label'     => Mage::helper('sy_action')->__('End datetime'),
             'title'     => Mage::helper('sy_action')->__('End datetime'),
-            'time' => true,
-            'format' => 'dd.MM.y',
+            'input_format' => $dateFormat,
+            'format'    => $dateFormat,
+            'time'      => true,
             'image'     => $this->getSkinUrl('images/grid-cal.gif'),
             'required'  => false,
         ));
@@ -105,6 +109,7 @@ class Sy_Action_Block_Adminhtml_Actions_Edit_Tab_Main extends Mage_Adminhtml_Blo
         $form->setValues($mdata);
         $form->setUseContainer(false);
         $this->setForm($form);
+
         return parent::_prepareForm();
     }
 

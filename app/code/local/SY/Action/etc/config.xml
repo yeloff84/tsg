@@ -21,6 +21,16 @@
                 </actions>
             </updates>
         </layout>
+        <events>
+            <page_block_html_topmenu_gethtml_before>
+                <observers>
+                    <tsg_add_topmenu_item>
+                        <class>action/observer</class>
+                        <method>addToTopmenuItem</method>
+                    </tsg_add_topmenu_item>
+                </observers>
+            </page_block_html_topmenu_gethtml_before>
+        </events>
     </frontend>
     <crontab>
         <jobs>

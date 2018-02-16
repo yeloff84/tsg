@@ -13,7 +13,7 @@ class Sy_Action_Block_Adminhtml_Actions_Edit_Tab_Products extends Mage_Adminhtml
     {
         parent::__construct();
         $this->setId('products');
-        $this->setDefaultSort('id');
+        $this->setDefaultSort('entity_id');
         $this->setUseAjax(true);
         if ($this->getCurrentAction() && $this->getCurrentAction()->getId()) {
             $this->setDefaultFilter(array('in_products' => 1));
@@ -73,7 +73,7 @@ class Sy_Action_Block_Adminhtml_Actions_Edit_Tab_Products extends Mage_Adminhtml
      */
     public function getSelectedProducts()
     {
-        $actionId = $this->getCurrentAction()->id;
+        $actionId = $this->getCurrentAction()->getId();
 
         $collection = Mage::getModel('action/products')->getCollection()
             ->addFieldToFilter('action_id', $actionId);
@@ -113,8 +113,10 @@ class Sy_Action_Block_Adminhtml_Actions_Edit_Tab_Products extends Mage_Adminhtml
      */
     public function _prepareCollection() {
 
+        $websiteIds = array(Mage::app()->getStore(1)->getWebsiteId());
         $collection = Mage::getModel('catalog/product')->getCollection()
             ->addAttributeToSelect('name')
+            ->addWebsiteFilter($websiteIds)
             ->addAttributeToFilter('status', Mage_Catalog_Model_Product_Status::STATUS_ENABLED)
             ->addFieldToFilter('visibility', Mage_Catalog_Model_Product_Visibility::VISIBILITY_BOTH);
 
@@ -149,13 +151,6 @@ class Sy_Action_Block_Adminhtml_Actions_Edit_Tab_Products extends Mage_Adminhtml
             'align'     => 'left',
             'index'     => 'name',
             'width'     => '250'
-        ));
-
-        $this->addColumn('ptype', array(
-            'header'    => Mage::helper('sy_action')->__('Type'),
-            'align'     => 'left',
-            'index'     => 'type',
-            'width'     => '10'
         ));
 
         $this->addColumn('pvisibility', array(

@@ -6,16 +6,20 @@
 class Sy_Action_Block_Details extends Mage_Catalog_Block_Product_Abstract
 {
     /**
-     * @param $actionId
      * @return Mage_Catalog_Model_Resource_Product_Collection
+     * @throws Exception
      */
-    public function getActionProducts($actionId)
+    public function getActionProducts()
     {
+        $actionId = $this->getRequest()->getParam('id');
+        $websiteIds = array(Mage::app()->getStore(1)->getWebsiteId());
+
         /* @var $products Mage_Catalog_Model_Resource_Product_Collection */
         $products =  Mage::getModel('catalog/product')->getCollection()
             ->addAttributeToSelect('*')
             ->joinTable('action/products', 'product_id=entity_id', array('aid' => 'action_id'))
             ->addFieldToFilter('aid', $actionId)
+            ->addWebsiteFilter($websiteIds)
             ->addAttributeToFilter('status', Mage_Catalog_Model_Product_Status::STATUS_ENABLED)
             ->addFieldToFilter('visibility', Mage_Catalog_Model_Product_Visibility::VISIBILITY_BOTH);
 
@@ -23,7 +27,7 @@ class Sy_Action_Block_Details extends Mage_Catalog_Block_Product_Abstract
     }
 
     /**
-     * @return Zend_Controller_Response_Abstract
+     * @return Sy_Action_Model_Action|Zend_Controller_Response_Abstract
      * @throws Exception
      */
     public function getActionDetails()
@@ -34,7 +38,9 @@ class Sy_Action_Block_Details extends Mage_Catalog_Block_Product_Abstract
         $datemodel = Mage::getModel('core/date');
         $curdate = $datemodel->gmtDate('Y-m-d H:i:s');
 
+        $dateHelper = Mage::helper('core');
 
+        /** @var Sy_Action_Model_Action $action */
         $action = Mage::getModel('action/action')
             ->getCollection()
             ->addFieldToFilter('id', $actionId)
@@ -47,13 +53,23 @@ class Sy_Action_Block_Details extends Mage_Catalog_Block_Product_Abstract
 
         if ($action->getData()) {
 
+            $action->setResizedImg(Mage::helper('sy_action')->resizeImage($action->getImage(), 300, 300));
+
+            if (!$action->getEndDatetime()) {
+                $action->setDuration('from ' . $dateHelper->formatDate($action->getStartDatetime(), 'short', true)
+                );
+            } else {
+                $action->setDuration(
+                    'from ' . $dateHelper->formatDate($action->getStartDatetime(), 'short', true) .
+                    ' to ' . $dateHelper->formatDate($action->getEndDatetime(), 'short', true)
+                );
+            }
+
             return $action;
 
         } else {
-
-            return Mage::app()->getFrontController()->getResponse()->setRedirect(Mage::getBaseUrl().'actions/index/index');
-
-            exit();
+            return Mage::app()->getFrontController()->getResponse()
+                ->setRedirect(Mage::getBaseUrl() . 'actions/index/index');
         }
     }
 }

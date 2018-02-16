@@ -1,33 +1,26 @@
-<?php
-//print_r($this->getActionsList());
-?>
-
+<?php /** @var Sy_Action_Model_Action $_actions */ ?>
 <?php if ($_actions = $this->getActionsList()) : ?>
 
 <div class="widget widget-actions">
     <div class="widget-title">
         <h2>Module SY Actions List</h2>
     </div>
-    <ul class="products-grid products-grid--max-3-col-widget">
+    <ul class="products-grid">
     <?php foreach ($_actions as $_action) : ?>
         <li class="item action-item">
-            <a href="<?php echo Mage::getBaseUrl().'actions/action/index/id/'.$_action->id; ?>" title="<?php echo $_action->name; ?>" class="action-image">
-                <img src="<?php echo Mage::helper('sy_action')->resizeImage($_action->image, 200, 200); ?>" alt="<?php echo $_action->name; ?>" />
+            <a href="<?php echo Mage::getBaseUrl() . 'actions/action/index/id/' . $_action->getId(); ?>" title="<?php echo $_action->getName(); ?>" class="action-image">
+                <img src="<?php echo $_action->getResizedImage(); ?>" alt="<?php echo $_action->getName(); ?>" />
             </a>
             <div class="action-info">
                 <h3 class="action-name">
-                    <a href="<?php echo Mage::getBaseUrl().'actions/action/index/id/'.$_action->id; ?>" title="<?php echo $_action->name; ?>">
-                        <?php echo $_action->name; ?>
+                    <a href="<?php echo Mage::getBaseUrl() . 'actions/action/index/id/' . $_action->getId(); ?>" title="<?php echo $_action->getName(); ?>">
+                        <?php echo $_action->getName(); ?>
                     </a>
                 </h3>
-                <p>
-                <?php if ($_action->end_datetime) : ?>
-                    <?php echo 'untill '.gmdate('d.m.Y', strtotime($_action->end_datetime)); ?>
-                <?php endif; ?>
-                </p>
+                <p><?php echo $_action->getDuration(); ?></p>
             </div>
         </li>
     <?php endforeach; ?>
     </ul>
-
+</div>
 <?php endif; ?>

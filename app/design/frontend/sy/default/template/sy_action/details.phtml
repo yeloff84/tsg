@@ -1,22 +1,15 @@
-<?php
-
-?>
-
-<h2>SY Action details page</h2>
+<?php /** @var Sy_Action_Model_Action $_ad */ ?>
+<?php if ($_ad = $this->getActionDetails()) : ?>
 
 <div class="widget">
     <div class="action-details">
-        <div style="float: left; margin: 0 20px 20px 0;"><img src="<?php echo Mage::helper('sy_action')->resizeImage($this->getActionDetails()->image, 300, 300); ?>" alt="<?php echo $this->getActionDetails()->name; ?>" /></div>
-        <h1>Action Name: <?php echo $this->getActionDetails()->name; ?></h1>
-        <div><?php echo $this->getActionDetails()->description; ?></div>
-        <br>
-        <hr>
-        <br>
-        <b>Action Duration: </b>
-        from <?php echo gmdate('d.m.Y', strtotime($this->getActionDetails()->start_datetime)); ?>
-        <?php if ($this->getActionDetails()->end_datetime) : ?>
-            <?php echo ' to '.gmdate('d.m.Y', strtotime($this->getActionDetails()->end_datetime)); ?>
-        <?php endif; ?>
+        <div style="float: left; margin: 0 20px 20px 0;"><img src="<?php echo $_ad->getResizedImg(); ?>" alt="<?php echo $_ad->getName(); ?>" /></div>
+        <h1><?php echo $_ad->getName(); ?></h1>
+        <div><?php echo $_ad->getDescription(); ?></div>
+        <br><hr><br>
+        <div>
+            <b>Action Duration: </b> <?php echo $_ad->getDuration(); ?>
+        </div>
     </div>
     <div style="clear:both;"></div>
     <br>
@@ -24,7 +17,8 @@
     <br>
     <div class="widget-products">
         <h3>Action Products</h3>
-        <?php if ($_aps = $this->getActionProducts($this->getActionDetails()->id)) : ?>
+        <?php /** @var Sy_Action_Model_Action $_aps */ ?>
+        <?php if ($_aps = $this->getActionProducts()) : ?>
         <ul class="products-grid products-grid--max-6-col first last odd">
         <?php foreach ($_aps as $_ap) : ?>
                 <li class="item action-item">
@@ -42,3 +36,5 @@
         <?php endif; ?>
     </div>
 </div>
+
+<?php endif; ?>
