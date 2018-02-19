@@ -53,7 +53,7 @@ class Sy_Action_Block_Details extends Mage_Catalog_Block_Product_Abstract
 
         if ($action->getData()) {
 
-            $action->setResizedImg(Mage::helper('sy_action')->resizeImage($action->getImage(), 300, 300));
+            $action->setResizedImage(Mage::helper('sy_action')->resizeImage($action->getImage(), 300, 300));
 
             if (!$action->getEndDatetime()) {
                 $action->setDuration('from ' . $dateHelper->formatDate($action->getStartDatetime(), 'short', true)
@@ -65,11 +65,11 @@ class Sy_Action_Block_Details extends Mage_Catalog_Block_Product_Abstract
                 );
             }
 
-            return $action;
-
         } else {
-            return Mage::app()->getFrontController()->getResponse()
+            Mage::app()->getFrontController()->getResponse()
                 ->setRedirect(Mage::getBaseUrl() . 'actions/index/index');
         }
+
+        return $action;
     }
 }

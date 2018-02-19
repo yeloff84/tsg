@@ -32,7 +32,12 @@ class Sy_Action_Adminhtml_ActionsController extends Mage_Adminhtml_Controller_Ac
     {
         $actionId = (int) $this->getRequest()->getParam('id');
 
-        $model = Mage::getModel('action/action')->load($actionId);
+        $model = null;
+        if ($actionId) {
+            $model = Mage::getModel('action/action')->load($actionId);
+        } else {
+            $model = Mage::getModel('action/action');
+        }
 
         Mage::register('current_action', $model);
 
@@ -47,7 +52,12 @@ class Sy_Action_Adminhtml_ActionsController extends Mage_Adminhtml_Controller_Ac
     {
         $actionId = (int) $this->getRequest()->getParam('id');
 
-        $model = Mage::getModel('action/action')->load($actionId);
+        $model = null;
+        if ($actionId) {
+            $model = Mage::getModel('action/action')->load($actionId);
+        } else {
+            $model = Mage::getModel('action/action');
+        }
 
         Mage::register('current_action', $model);
 
@@ -62,7 +72,12 @@ class Sy_Action_Adminhtml_ActionsController extends Mage_Adminhtml_Controller_Ac
     {
         $actionId = (int) $this->getRequest()->getParam('id');
 
-        $model = Mage::getModel('action/action')->load($actionId);
+        $model = null;
+        if ($actionId) {
+            $model = Mage::getModel('action/action')->load($actionId);
+        } else {
+            $model = Mage::getModel('action/action');
+        }
 
         Mage::register('current_action', $model);
 

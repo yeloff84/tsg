@@ -1,7 +1,8 @@
 <?php /** @var Sy_Action_Model_Action $_actions */ ?>
-<?php if ($_actions = $this->getActionsList()) : ?>
+<?php if ($_actions = $this->getCollection()) : ?>
 
-<div class="widget widget-actions">
+    <?php echo $this->getPagerHtml(); ?>
+    <div class="widget widget-actions">
     <div class="widget-title">
         <h2>Module SY Actions List</h2>
     </div>

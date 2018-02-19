@@ -28,7 +28,7 @@
                         <grid_block_name>sy_action_edit_tab_products</grid_block_name>
                         <data_callback>getSelectedProducts</data_callback>
                         <hidden_input_name>products_ids</hidden_input_name>
-                        <reload_param_name>products_ids</reload_param_name>
+                        <reload_param_name>aproducts</reload_param_name>
                     </action>
                 </reference>
             </block>

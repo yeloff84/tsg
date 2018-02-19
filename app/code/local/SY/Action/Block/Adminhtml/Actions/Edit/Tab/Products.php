@@ -69,19 +69,25 @@ class Sy_Action_Block_Adminhtml_Actions_Edit_Tab_Products extends Mage_Adminhtml
     }
 
     /**
-     * @return array
+     * @return array|mixed
+     * @throws Exception
      */
     public function getSelectedProducts()
     {
+        $productsIds = [];
+
+        if ($this->getRequest()->getParam('aproducts')) {
+            $productsIds = $this->getRequest()->getParam('aproducts');
+        }
+
         $actionId = $this->getCurrentAction()->getId();
 
         $collection = Mage::getModel('action/products')->getCollection()
             ->addFieldToFilter('action_id', $actionId);
 
-        $productsIds = [];
 
         foreach ($collection as $item) {
-            $productsIds[] = $item->product_id;
+            $productsIds[] = $item->getProductId();
         }
 
         return $productsIds;
@@ -90,6 +96,7 @@ class Sy_Action_Block_Adminhtml_Actions_Edit_Tab_Products extends Mage_Adminhtml
     /**
      * @param $column
      * @return $this
+     * @throws Exception
      */
     protected function _addColumnFilterToCollection($column)
     {
@@ -110,6 +117,7 @@ class Sy_Action_Block_Adminhtml_Actions_Edit_Tab_Products extends Mage_Adminhtml
 
     /**
      * @return Mage_Adminhtml_Block_Widget_Grid
+     * @throws Mage_Core_Model_Store_Exception
      */
     public function _prepareCollection() {
 
