@@ -2,6 +2,7 @@
 
 /**
  * Class Sy_Action_Block_Details
+ *
  */
 class Sy_Action_Block_Details extends Mage_Catalog_Block_Product_Abstract
 {

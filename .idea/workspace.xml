@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f8a5390a-59c1-407b-86ab-321570f989ea" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/code/local/SY/Action/Block/Details.php" afterPath="$PROJECT_DIR$/app/code/local/SY/Action/Block/Details.php" />
       <change beforePath="$PROJECT_DIR$/app/code/local/SY/Action/Block/List.php" afterPath="$PROJECT_DIR$/app/code/local/SY/Action/Block/List.php" />
+      <change beforePath="$PROJECT_DIR$/app/design/frontend/sy/default/template/sy_action/index.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/sy/default/template/sy_action/index.phtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +31,7 @@
       <file leaf-file-name="ActionsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/controllers/Adminhtml/ActionsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2630">
+            <state relative-caret-position="3230">
               <caret line="190" column="30" lean-forward="false" selection-start-line="190" selection-start-column="30" selection-end-line="190" selection-end-column="30" />
               <folding />
             </state>
@@ -39,7 +41,7 @@
       <file leaf-file-name="Products.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Adminhtml/Actions/Edit/Tab/Products.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-256">
+            <state relative-caret-position="272">
               <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding />
             </state>
@@ -59,18 +61,60 @@
       <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/design/frontend/sy/default/template/sy_action/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <state relative-caret-position="129">
+              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="List.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="List.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/List.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="357">
+              <caret line="84" column="16" lean-forward="false" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mysql.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/Varien/Db/Adapter/Pdo/Mysql.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="128" column="6" lean-forward="true" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="6" />
+              <folding>
+                <marker date="1519055790154" expanded="true" signature="22423:22457" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="24412:24494" ph="UPDATE %s AS... " />
+                <marker date="1519055790154" expanded="true" signature="27675:27709" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="28826:28843" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="30101:30138" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="31318:31352" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="43501:43544" ph="SELECT COUNT... %s" />
+                <marker date="1519055790154" expanded="true" signature="43670:43704" ph="DELETE FROM `%s`... " />
+                <marker date="1519055790154" expanded="true" signature="61778:61802" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="62238:62265" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="62750:62782" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="71541:71568" ph="CREATE TABLE... " />
+                <marker date="1519055790154" expanded="true" signature="84210:84231" ph="DROP TABLE I... " />
+                <marker date="1519055790154" expanded="true" signature="86446:86473" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="88316:88330" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="91459:91476" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="92756:92824" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="114163:114190" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="114626:114652" ph="ALTER TABLE " />
+                <marker date="1519055790154" expanded="true" signature="117515:117549" ph="Select must part" />
+                <marker date="1519055790154" expanded="true" signature="125768:125797" ph="INSERT INTO " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pdo_mysql.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/var/debug/pdo_mysql.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71">
+              <caret line="475" column="37" lean-forward="false" selection-start-line="475" selection-start-column="26" selection-end-line="475" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -89,8 +133,8 @@
       <file leaf-file-name="Details.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+            <state relative-caret-position="1139">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,6 +163,7 @@
       <find>call</find>
       <find>$this-&gt;getActionDetails()</find>
       <find>gridAct</find>
+      <find>`sy_action`</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -135,8 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/design/frontend/sy/default/template/sy_newproducts/index.phtml" />
-        <option value="$PROJECT_DIR$/app/code/local/SY/Action/controllers/actionController.php" />
         <option value="$PROJECT_DIR$/app/code/local/SY/Action/Block/Adminhtml/Actions/Edit/Tab/Form.php" />
         <option value="$PROJECT_DIR$/lib/Varien/Autoload.php" />
         <option value="$PROJECT_DIR$/app/code/local/SY/Action/Model/Resource/Actions/Products.php" />
@@ -184,8 +227,10 @@
         <option value="$PROJECT_DIR$/app/design/frontend/sy/default/layout/sy_action.xml" />
         <option value="$PROJECT_DIR$/app/design/frontend/sy/default/template/sy_action/details.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/SY/Action/Block/Details.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/sy/default/template/sy_action/index.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/SY/Action/Block/List.php" />
+        <option value="$PROJECT_DIR$/var/debug/pdo_mysql.log" />
+        <option value="$PROJECT_DIR$/app/design/frontend/sy/default/template/sy_action/index.phtml" />
+        <option value="$PROJECT_DIR$/lib/Varien/Db/Adapter/Pdo/Mysql.php" />
       </list>
     </option>
   </component>
@@ -258,51 +303,6 @@
               <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Page" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Page" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Page" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
@@ -492,7 +492,49 @@
             <path>
               <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
               <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Varien" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Varien" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Db" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Varien" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Db" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Adapter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Varien" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Db" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Adapter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Pdo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="debug" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="log" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -503,9 +545,10 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.php.tools.quality.phpcs.PhpCSConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../silenium/allo_selenium" />
     <property name="Constants" value="false" />
+    <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -571,7 +614,7 @@
       <workItem from="1518678586134" duration="19472000" />
       <workItem from="1518698093611" duration="7783000" />
       <workItem from="1518764589737" duration="28194000" />
-      <workItem from="1519024508425" duration="16932000" />
+      <workItem from="1519024508425" duration="23730000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1517586741692</created>
@@ -584,7 +627,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295089000" />
+    <option name="totallyTimeSpent" value="301887000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -602,12 +645,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22014925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44805196" sideWeight="0.510661" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5127932" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32852387" sideWeight="0.48971722" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32852387" sideWeight="0.48720682" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42064372" sideWeight="0.48933902" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -696,20 +739,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Model/Resource/Action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/sql/action_setup/install-0.1.0.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/sql/action_setup/upgrade-0.1.0-0.1.1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1039,10 +1068,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Adminhtml/Actions/Edit/Tab/Products.php">
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Page/Block/Html/Pager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-256">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="368">
+          <caret line="139" column="19" lean-forward="false" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1055,43 +1092,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/sy/default/template/sy_action/index.phtml">
+    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Adminhtml/Actions/Edit/Tab/Products.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Page/Block/Html/Pager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="139" column="19" lean-forward="false" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/controllers/Adminhtml/ActionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2630">
-          <caret line="190" column="30" lean-forward="false" selection-start-line="190" selection-start-column="30" selection-end-line="190" selection-end-column="30" />
+        <state relative-caret-position="272">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/List.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="357">
+          <caret line="84" column="16" lean-forward="false" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/controllers/Adminhtml/ActionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3230">
+          <caret line="190" column="30" lean-forward="false" selection-start-line="190" selection-start-column="30" selection-end-line="190" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/sy/default/template/sy_action/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/debug/pdo_mysql.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="475" column="37" lean-forward="false" selection-start-line="475" selection-start-column="26" selection-end-line="475" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Varien/Db/Adapter/Pdo/Mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="128" column="6" lean-forward="true" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="6" />
+          <folding>
+            <marker date="1519055790154" expanded="true" signature="22423:22457" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="24412:24494" ph="UPDATE %s AS... " />
+            <marker date="1519055790154" expanded="true" signature="27675:27709" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="28826:28843" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="30101:30138" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="31318:31352" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="43501:43544" ph="SELECT COUNT... %s" />
+            <marker date="1519055790154" expanded="true" signature="43670:43704" ph="DELETE FROM `%s`... " />
+            <marker date="1519055790154" expanded="true" signature="61778:61802" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="62238:62265" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="62750:62782" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="71541:71568" ph="CREATE TABLE... " />
+            <marker date="1519055790154" expanded="true" signature="84210:84231" ph="DROP TABLE I... " />
+            <marker date="1519055790154" expanded="true" signature="86446:86473" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="88316:88330" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="91459:91476" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="92756:92824" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="114163:114190" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="114626:114652" ph="ALTER TABLE " />
+            <marker date="1519055790154" expanded="true" signature="117515:117549" ph="Select must part" />
+            <marker date="1519055790154" expanded="true" signature="125768:125797" ph="INSERT INTO " />
+          </folding>
         </state>
       </provider>
     </entry>

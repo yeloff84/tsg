@@ -6,9 +6,13 @@
 class Sy_Action_Block_List extends Mage_Core_Block_Template
 {
 
+    /**
+     * Sy_Action_Block_List constructor.
+     */
     public function __construct()
     {
         parent::__construct();
+        $this->setCollection($this->getActionsList());
     }
 
     /**
@@ -23,7 +27,8 @@ class Sy_Action_Block_List extends Mage_Core_Block_Template
             $curr_page = Mage::app()->getRequest()->getParam('p');
         }
 
-        if (Mage::app()->getRequest()->getParam('limit')) {
+        if (is_numeric(Mage::app()->getRequest()->getParam('limit'))
+            && Mage::app()->getRequest()->getParam('limit') <= 50) {
             $limit = Mage::app()->getRequest()->getParam('limit');
         }
 
@@ -42,8 +47,8 @@ class Sy_Action_Block_List extends Mage_Core_Block_Template
             ))
             ->addFieldToFilter('is_active', 1)
             ->setOrder('start_datetime','DESC')
-            ->setCurPage($curr_page)
-            ->setPageSize($limit);
+            ->setCurPage((int)$curr_page)
+            ->setPageSize((int)$limit);
 
         foreach ($collection as $col) {
 
@@ -67,16 +72,15 @@ class Sy_Action_Block_List extends Mage_Core_Block_Template
 
         /** @var Mage_Page_Block_Html_Pager $pager */
         $pager = $this->getLayout()->createBlock('page/html_pager', 'custom.pager');
-        $pager->setCollection($this->getActionsList());
+        $pager->setCollection($this->getCollection());
         $this->setChild('pager', $pager);
-        $this->getActionsList()->load();
 
         return $this;
     }
 
     public function getPagerHtml()
     {
-        if ($this->getActionsList()->getSize() > 10) {
+        if ($this->getCollection()->getSize() > 10) {
             return $this->getChildHtml('pager');
         } else {
             return '';
