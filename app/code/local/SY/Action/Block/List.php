@@ -23,6 +23,10 @@ class Sy_Action_Block_List extends Mage_Core_Block_Template
             $curr_page = Mage::app()->getRequest()->getParam('p');
         }
 
+        if (Mage::app()->getRequest()->getParam('limit')) {
+            $limit = Mage::app()->getRequest()->getParam('limit');
+        }
+
         /** @var Mage_Core_Model_Date $datemodel */
         $datemodel = Mage::getModel('core/date');
         $curdate = $datemodel->gmtDate('Y-m-d H:i:s');
