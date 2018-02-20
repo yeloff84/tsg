@@ -46,6 +46,7 @@ class Sy_Action_Block_List extends Mage_Core_Block_Template
                 array('null' => true)
             ))
             ->addFieldToFilter('is_active', 1)
+            ->addFieldToFilter('status', 2)
             ->setOrder('start_datetime','DESC')
             ->setCurPage((int)$curr_page)
             ->setPageSize((int)$limit);

@@ -50,6 +50,7 @@ class Sy_Action_Block_Details extends Mage_Catalog_Block_Product_Abstract
                 array('null' => true)
             ))
             ->addFieldToFilter('is_active', 1)
+            ->addFieldToFilter('status', 2)
             ->getFirstItem();
 
         if ($action->getData()) {
