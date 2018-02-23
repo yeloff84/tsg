@@ -3,7 +3,6 @@
 /**
  * Class Tsg_Imgimport_Block_Adminhtml_Tabs
  */
-
 class Tsg_Imgimport_Block_Adminhtml_Tabs extends Mage_Adminhtml_Block_Catalog_Product_Edit_Tabs
 {
     /**
