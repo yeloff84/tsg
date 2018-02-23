@@ -132,6 +132,13 @@ class Tsg_Imgimport_Block_Adminhtml_Tabs_Imgimport extends Mage_Adminhtml_Block_
             'width'     => '10'
         ));
 
+        $this->addColumn('imports_error', array(
+            'header'    => $helper->__('Status'),
+            'align'     => 'left',
+            'index'     => 'error',
+            'width'     => '10'
+        ));
+
         return parent::_prepareColumns();
     }
 }

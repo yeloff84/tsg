@@ -41,7 +41,7 @@ class Tsg_Imgimport_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function humanFileSize($size, $unit = "")
     {
-        $filesize = number_format($size) . " bytes";
+        $filesize = '';
 
         if ((!$unit && $size >= 1 << 30) || $unit == "GB") {
             $filesize = number_format($size / (1 << 30), 0) . " GB";
@@ -58,6 +58,9 @@ class Tsg_Imgimport_Helper_Data extends Mage_Core_Helper_Abstract
         }
         if ($size < 1000000) {
             $filesize = '(<=) ' . number_format(423, 0) . " KB";
+        }
+        if ($size == '') {
+            $filesize = '';
         }
 
         return $filesize;
