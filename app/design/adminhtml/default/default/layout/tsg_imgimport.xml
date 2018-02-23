@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<layout>
+    <adminhtml_imgimport_index>
+        <reference name="content">
+            <block type="tsg_imgimport/adminhtml_form" name="tsg.imgimport.form"/>
+        </reference>
+    </adminhtml_imgimport_index>
+</layout>

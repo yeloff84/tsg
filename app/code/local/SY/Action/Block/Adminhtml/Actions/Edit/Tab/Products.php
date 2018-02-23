@@ -105,7 +105,7 @@ class Sy_Action_Block_Adminhtml_Actions_Edit_Tab_Products extends Mage_Adminhtml
             if ($column->getFilter()->getValue()) {
                 $this->getCollection()->addFieldToFilter('entity_id', array('in' => $productsIds));
             } else {
-                if($productsIds) {
+                if ($productsIds) {
                     $this->getCollection()->addFieldToFilter('entity_id', array('nin' => $productsIds));
                 }
             }

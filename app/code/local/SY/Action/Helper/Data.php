@@ -55,12 +55,12 @@ class Sy_Action_Helper_Data extends Mage_Core_Helper_Abstract
      * @param bool $withMedia
      * @return string
      */
-    public function resizeImage($imageName, $width = NULL, $height = NULL, $withMedia = true)
+    public function resizeImage($imageName, $width = null, $height = null, $withMedia = true)
     {
 
         $imagePathFull = $this->getBaseUploadPath($imageName);
 
-        if ($width == NULL && $height == NULL) {
+        if ($width == null && $height == null) {
             $width = 100;
             $height = 100;
         }
@@ -71,10 +71,10 @@ class Sy_Action_Helper_Data extends Mage_Core_Helper_Abstract
 
         if (file_exists($imagePathFull) && !file_exists($resizePathFull)) {
             $imageObj = new Varien_Image($imagePathFull);
-            $imageObj->keepAspectRatio(TRUE);
-            $imageObj->keepFrame(TRUE);
-            $imageObj->keepTransparency(TRUE);
-            $imageObj->constrainOnly(TRUE);
+            $imageObj->keepAspectRatio(true);
+            $imageObj->keepFrame(true);
+            $imageObj->keepTransparency(true);
+            $imageObj->constrainOnly(true);
             $imageObj->backgroundColor(array(255, 255, 255));
             $imageObj->quality(90);
             $imageObj->resize($width, $height);

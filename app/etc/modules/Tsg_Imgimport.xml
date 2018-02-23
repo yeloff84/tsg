@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Tsg_Imgimport>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Tsg_Imgimport>
+    </modules>
+</config>

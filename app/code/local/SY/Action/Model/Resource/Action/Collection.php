@@ -8,7 +8,7 @@ class Sy_Action_Model_Resource_Action_Collection extends Mage_Core_Model_Resourc
     /**
      *
      */
-    protected function _constuct()
+    protected function _construct()
         {
             $this->_init('action/action');
         }
