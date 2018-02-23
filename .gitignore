@@ -18,7 +18,7 @@ dumpNot1jul2011.sql
 dumpNut1jul.tar.gz
 *.db
 *.db:e*
-.idea/
+.idea/*
 mage_unit.sh
 app/code/local/Mage/Core/Model/Resource.php
 app/code/local/Varien/Profiler.php
