@@ -63,12 +63,12 @@ class Tsg_Imgimport_Adminhtml_ImgimportController extends Mage_Adminhtml_Control
                         $dbErrors++;
                     }
                 }
-                $session->addSuccess($helper->__($i . ' rows have imported successfully'));
+                $session->addSuccess($helper->__('%s rows have imported successfully', $i));
                 if ($dbErrors > 0) {
-                    $session->addError($helper->__($dbErrors . 'rows failed'));
+                    $session->addError($helper->__('%s rows failed', $dbErrors));
                 }
             } else {
-                $session->addError('Your CSV is invalid');
+                $session->addError($helper->__('Your CSV is invalid'));
             }
         }
         return $this->_redirect('*/*/index');

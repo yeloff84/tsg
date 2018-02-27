@@ -73,6 +73,15 @@
                 </tsg_imgimport>
             </updates>
         </layout>
+        <translate>
+            <modules>
+                <translations>
+                    <files>
+                        <default>Tsg_Imgimport.csv</default>
+                    </files>
+                </translations>
+            </modules>
+        </translate>
     </adminhtml>
     <crontab>
         <jobs>

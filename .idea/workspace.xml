@@ -4,9 +4,9 @@
     <list default="true" id="f8a5390a-59c1-407b-86ab-321570f989ea" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Helper/Data.php" afterPath="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Helper/Data.php" />
-      <change beforePath="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Imgimport.php" afterPath="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Imgimport.php" />
       <change beforePath="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Importcron.php" afterPath="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Importcron.php" />
       <change beforePath="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/controllers/Adminhtml/ImgimportController.php" afterPath="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/controllers/Adminhtml/ImgimportController.php" />
+      <change beforePath="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/etc/config.xml" afterPath="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/etc/config.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,21 +29,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Tabs.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Block/Adminhtml/Tabs.php">
+      <file leaf-file-name="Importcron.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Importcron.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="182">
+              <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImgimportController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/controllers/Adminhtml/ImgimportController.php">
+      <file leaf-file-name="Object.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/Varien/Object.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="-91">
+              <caret line="242" column="20" lean-forward="false" selection-start-line="242" selection-start-column="20" selection-end-line="242" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Abstract.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Abstract.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="223" column="20" lean-forward="false" selection-start-line="223" selection-start-column="20" selection-end-line="223" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="291538101" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/var/report/291538101">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -52,38 +72,18 @@
       <file leaf-file-name="Data.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Helper/Data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="208">
+              <caret line="68" column="40" lean-forward="false" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Imgimport.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Block/Adminhtml/Tabs/Imgimport.php">
+      <file leaf-file-name="Tsg_Imgimport.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/locale/en_US/Tsg_Imgimport.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="67" column="56" lean-forward="false" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Importcron.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Importcron.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Curl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Varien/Http/Adapter/Curl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="206" column="28" lean-forward="false" selection-start-line="206" selection-start-column="28" selection-end-line="206" selection-end-column="28" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -92,18 +92,38 @@
       <file leaf-file-name="Observer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cron/Model/Observer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="276">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Imgimport.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Imgimport.php">
+      <file leaf-file-name="cron.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cron.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="953">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tsg_Imgimport.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/locale/ru_RU/Tsg_Imgimport.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tsg_Imgimport.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/locale/uk_UA/Tsg_Imgimport.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -157,10 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/code/local/SY/Action/Model/Sycron.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SY/Action/Model/Observer.php" />
-        <option value="$PROJECT_DIR$/app/code/core/Mage/Core/Model/Abstract.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SY/Action/Model/Action.php" />
         <option value="$PROJECT_DIR$/app/code/local/SY/Action/Block/Adminhtml/Actions/Edit/Tab/Main.php" />
         <option value="$PROJECT_DIR$/app/design/frontend/sy/default/template/sy_action/productactions.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/SY/Action/Block/Pactions.php" />
@@ -196,7 +212,6 @@
         <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Block/Adminhtml/Renderer/Imgimportgrid.php" />
         <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/sql/imgimport_setup/install-0.1.0.php" />
         <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/sql/tsg_imgimport_setup/install-0.1.0.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/etc/config.xml" />
         <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Block/Adminhtml/Renderer/Imgimport.php" />
         <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Block/Adminhtml/Form.php" />
         <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Resource/Imgimport/Collection.php" />
@@ -206,8 +221,13 @@
         <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Block/Adminhtml/Tabs/Imgimport.php" />
         <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Imgimport.php" />
         <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/controllers/Adminhtml/ImgimportController.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Importcron.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/locale/en_US/Tsg_Imgimport.csv" />
+        <option value="$PROJECT_DIR$/app/locale/ru_RU/Tsg_Imgimport.csv" />
+        <option value="$PROJECT_DIR$/app/locale/uk_UA/Tsg_Imgimport.csv" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/sales/recurring/grid.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Helper/Data.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Importcron.php" />
       </list>
     </option>
   </component>
@@ -306,6 +326,33 @@
             <path>
               <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
               <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tsg" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tsg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Imgimport" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tsg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Imgimport" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Helper" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magentoft" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="media" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -322,6 +369,11 @@
             <path>
               <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="magentoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
             </path>
           </expand>
           <select />
@@ -351,17 +403,18 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\magentoft\app\locale\uk_UA" />
+      <recent name="C:\OSPanel\domains\magentoft\app\code\local\Tsg\Imgimport\Model" />
+      <recent name="C:\OSPanel\domains\magentoft\app\code\local\SY\Action\controllers\Adminhtml" />
+      <recent name="C:\OSPanel\domains\magentoft\app\code\local\SY\Newproducts\Block" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\magentoft\app\code\local\Tsg\Imgimport\Block\Adminhtml" />
       <recent name="C:\OSPanel\domains\magentoft\app\design\frontend\sy\default\template\sy_action" />
       <recent name="C:\OSPanel\domains\magentoft\app\code\local\SY\Action\Model" />
       <recent name="C:\OSPanel\domains\magentoft\app\code\local\SY\Action\Model\Resource\Action" />
       <recent name="C:\OSPanel\domains\magentoft\app\code\local\SY\Action\sql\action_setup" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\magentoft\app\code\local\Tsg\Imgimport\Model" />
-      <recent name="C:\OSPanel\domains\magentoft\app\code\local\SY\Action\controllers\Adminhtml" />
-      <recent name="C:\OSPanel\domains\magentoft\app\code\local\SY\Newproducts\Block" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -428,7 +481,7 @@
       <workItem from="1519370683101" duration="656000" />
       <workItem from="1519371348217" duration="24407000" />
       <workItem from="1519630585332" duration="27655000" />
-      <workItem from="1519715264462" duration="11797000" />
+      <workItem from="1519715264462" duration="23325000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1517586741692</created>
@@ -458,11 +511,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519400899652</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refs #35638 refs #35639 Автоматический импорт картинок&#10;(multiple issues fixed)">
+      <created>1519727179092</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1519727179092</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443334000" />
+    <option name="totallyTimeSpent" value="454862000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -536,19 +596,37 @@
     <MESSAGE value="init" />
     <MESSAGE value="test" />
     <MESSAGE value="refs #35638 refs #35639 Автоматический импорт картинок&#10;(error field issue fix)" />
-    <option name="LAST_COMMIT_MESSAGE" value="refs #35638 refs #35639 Автоматический импорт картинок&#10;(error field issue fix)" />
+    <MESSAGE value="refs #35638 refs #35639 Автоматический импорт картинок&#10;(multiple issues fixed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refs #35638 refs #35639 Автоматический импорт картинок&#10;(multiple issues fixed)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Helper/Data.php</url>
+          <line>65</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="235" />
+      <option name="time" value="244" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="cron.php">
+        <watch expression="$isUnique" />
+        <watch expression="$product-&gt;getMediaGalleryImages()" language="PHP" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>$product-&gt;getMediaGalleryImages()</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>$data-&gt;getPath()</expression-string>
         <language-id>PHP</language-id>
@@ -594,87 +672,9 @@
         <language-id>PHP</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>Mage::app()-&gt;getStore()</expression-string>
-        <language-id>PHP</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/design/adminhtml/default/default/template/tsg_imgimport/tab.phtml" />
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Adminhtml/Actions/Grid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Adminhtml/Actions/Edit/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Adminhtml/Actions/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Adminhtml/Actions/Edit/Tabs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/Block/Adminhtml/Actions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Widget/Tabs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="128" column="42" lean-forward="false" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SY/Action/controllers/Adminhtml/ActionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="63" column="28" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Controller/Varien/Front.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Model/App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="366" column="0" lean-forward="false" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Mage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -816,13 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../modules/php/PHP-5.6-x64/PEAR/phpcs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -884,14 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cron/Model/Observer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Varien/Http/Adapter/Curl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -920,10 +905,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/report/291538101">
+    <entry file="file://$PROJECT_DIR$/app/locale/en_US/Mage_Shipping.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="10" column="77" lean-forward="true" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
+        <state relative-caret-position="-561">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/controllers/Adminhtml/ImgimportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="70" column="67" lean-forward="false" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -936,22 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/controllers/Adminhtml/ImgimportController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Helper/Data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Block/Adminhtml/Tabs/Imgimport.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -960,10 +937,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/locale/en_US/Phoenix_Moneybookers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/locale/en_US/Mage_Rss.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/locale/en_US/Mage_Reports.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="79" column="39" lean-forward="false" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/locale/uk_UA/Tsg_Imgimport.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/sales/recurring/grid.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/locale/ru_RU/Tsg_Imgimport.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/locale/en_US/Tsg_Imgimport.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="953">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cron/Model/Observer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/report/291538101">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Abstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="223" column="20" lean-forward="false" selection-start-line="223" selection-start-column="20" selection-end-line="223" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Helper/Data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="68" column="40" lean-forward="false" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Varien/Object.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="242" column="20" lean-forward="false" selection-start-line="242" selection-start-column="20" selection-end-line="242" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/Tsg/Imgimport/Model/Importcron.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+        <state relative-caret-position="182">
+          <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
           <folding />
         </state>
       </provider>

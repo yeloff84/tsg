@@ -61,13 +61,11 @@ class Tsg_Imgimport_Helper_Data extends Mage_Core_Helper_Abstract
      * @param $imgPath
      * @return bool
      */
-    public function isUniqueImg($productId, $imgPath)
+    public function isUniqueImg($product, $imgPath)
     {
         $status = true;
 
         /** @var Mage_Catalog_Model_Product $product */
-        $product = Mage::getModel('catalog/product')->load($productId);
-
         $images = $product->getMediaGalleryImages();
         $imgObject = new Varien_Image($imgPath);
         $imgSize = filesize($imgPath);
