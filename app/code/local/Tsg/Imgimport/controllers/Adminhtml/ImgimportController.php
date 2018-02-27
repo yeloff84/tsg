@@ -3,10 +3,12 @@
 /**
  * Class Tsg_Imgimport_Adminhtml_ImgimportController
  */
+
 class Tsg_Imgimport_Adminhtml_ImgimportController extends Mage_Adminhtml_Controller_Action
 {
     /**
-     *
+     * Display csv file upload form
+     * @return void
      */
     public function indexAction()
     {
@@ -22,23 +24,17 @@ class Tsg_Imgimport_Adminhtml_ImgimportController extends Mage_Adminhtml_Control
     {
         /** @var  Tsg_Imgimport_Helper_Data $helper */
         $helper = Mage::helper('tsg_imgimport');
-
         if (isset($_FILES['csv']['name']) and (file_exists($_FILES['csv']['tmp_name']))) {
             try {
                 $uploader = new Varien_File_Uploader('csv');
                 $uploader->setAllowedExtensions(array('csv'));
-
                 $uploader->setAllowRenameFiles(true);
-
-                $name = $_FILES['csv']['name'];
-
+                $name = mktime() . '.csv';
                 $path = $helper->getBaseUploadPath();
-
                 $uploader->save($path, $name);
-
                 $file = $path.$name;
             } catch (Exception $e) {
-                Mage::log($e->getMessage());
+                Mage::logException($e);
             }
         }
 
@@ -47,38 +43,39 @@ class Tsg_Imgimport_Adminhtml_ImgimportController extends Mage_Adminhtml_Control
 
         /** @var Mage_Core_Model_Session $session */
         $session = Mage::getSingleton('core/session');
-
         $csvData = $helper->getCsvData($file);
-
         if ($csvData) {
             $skuKey = array_search('sku', $csvData[0]);
             $urlKey = array_search('url', $csvData[0]);
             array_shift($csvData);
-
             if ($skuKey !== false && $urlKey !== false) {
                 $i = 0;
+                $dbErrors = 0;
                 foreach ($csvData as $row => $r) {
                     $model->setSku($r[$skuKey]);
                     $model->setUrl($r[$urlKey]);
-                    $model->save();
-                    $model->unsetData();
-                    $i++;
+                    try {
+                        $model->save();
+                        $model->unsetData();
+                        $i++;
+                    } catch (Exception $e) {
+                        Mage::logException($e);
+                        $dbErrors++;
+                    }
                 }
-                $session->addSuccess($i . ' rows have imported successfully');
-
-                if (!empty($dbErrors)) {
-                    $session->addError(count($dbErrors) . 'rows failed');
+                $session->addSuccess($helper->__($i . ' rows have imported successfully'));
+                if ($dbErrors > 0) {
+                    $session->addError($helper->__($dbErrors . 'rows failed'));
                 }
             } else {
                 $session->addError('Your CSV is invalid');
             }
         }
-
         return $this->_redirect('*/*/index');
     }
 
     /**
-     * @throws Mage_Core_Exception
+     * Add imports rows grid to tab layout
      */
     public function tabAction()
     {
@@ -87,7 +84,7 @@ class Tsg_Imgimport_Adminhtml_ImgimportController extends Mage_Adminhtml_Control
     }
 
     /**
-     * @throws Mage_Core_Exception
+     * Imports rows grid actions
      */
     public function importsgridAction()
     {

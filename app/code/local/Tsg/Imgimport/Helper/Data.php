@@ -3,6 +3,7 @@
 /**
  * Class Tsg_Imgimport_Helper_Data
  */
+
 class Tsg_Imgimport_Helper_Data extends Mage_Core_Helper_Abstract
 {
     /**
@@ -11,7 +12,6 @@ class Tsg_Imgimport_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function getBaseUploadPath($fileName = '')
     {
-
         if ($fileName != '') {
             return Mage::getBaseDir('media') . DS . 'tsg_imgimport' . DS . $fileName;
         } else {
@@ -20,6 +20,7 @@ class Tsg_Imgimport_Helper_Data extends Mage_Core_Helper_Abstract
     }
 
     /**
+     * Getting CSV data from uploaded file
      * @param $file
      * @return array|string
      */
@@ -35,34 +36,58 @@ class Tsg_Imgimport_Helper_Data extends Mage_Core_Helper_Abstract
     }
 
     /**
+     * Return human readable file size
+     *
      * @param $size
      * @param string $unit
      * @return string
      */
     public function humanFileSize($size, $unit = "")
     {
-        $filesize = '';
-
-        if ((!$unit && $size >= 1 << 30) || $unit == "GB") {
-            $filesize = number_format($size / (1 << 30), 0) . " GB";
-        }
         if ((!$unit && $size >= 1 << 20) || $unit == "MB") {
-            $filesize = number_format($size / (1 << 20), 0) . " MB";
+            $fileSize = number_format($size / (1 << 20), 2) . " MB";
+        } elseif ((!$unit && ($size > 0 && $size < 1 << 20) || $unit == "KB")) {
+            $fileSize = number_format($size / (1 << 10), 0) . " KB";
+        } else {
+            $fileSize = '';
         }
-        if ((!$unit && $size >= 1 << 10) || $unit == "KB") {
-            $filesize = number_format($size / (1 << 10), 0) . " KB";
-        }
-        /* for real human size please comment "if" statements below */
-        if ($size >= 1000000) {
-            $filesize = '(>=) ' . number_format(1.68, 2) . " MB";
-        }
-        if ($size < 1000000) {
-            $filesize = '(<=) ' . number_format(423, 0) . " KB";
-        }
-        if ($size == '') {
-            $filesize = '';
+        return $fileSize;
+    }
+
+    /**
+     * Check for image duplicates
+     *
+     * @param $productId
+     * @param $imgPath
+     * @return bool
+     */
+    public function isUniqueImg($productId, $imgPath)
+    {
+        $status = true;
+
+        /** @var Mage_Catalog_Model_Product $product */
+        $product = Mage::getModel('catalog/product')->load($productId);
+
+        $images = $product->getMediaGalleryImages();
+        $imgObject = new Varien_Image($imgPath);
+        $imgSize = filesize($imgPath);
+        $imgX = $imgObject->getOriginalWidth();
+        $imgY = $imgObject->getOriginalHeight();
+        $imgType = $imgObject->getMimeType();
+
+        foreach ($images as $key => $im) {
+            $pImgObject = new Varien_Image($im['path']);
+            if (filesize($im['path']) == $imgSize &&
+                $pImgObject->getOriginalWidth() == $imgX &&
+                $pImgObject->getOriginalHeight() == $imgY &&
+                $pImgObject->getMimeType() == $imgType) {
+                $status = false;
+                break;
+            } else {
+                $status = true;
+            }
         }
 
-        return $filesize;
+        return $status;
     }
 }
